@@ -26,3 +26,18 @@ console.log(typeof firstName)
 console.log(typeof isDead)
 
 console.log(typeof selectedLanguage)
+
+let person = {
+    name: 'Mafuz',
+    age: 30
+}
+
+// Dot Notation
+person.name = 'Golam';
+console.log(person)
+
+// Bracket Notation
+let selection = 'name'; // Usuallu used when we don't know the target property beforehand
+person[selection] = "Nasrina";
+
+console.log(person.name)
