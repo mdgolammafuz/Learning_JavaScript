@@ -51,3 +51,12 @@ selectedProducts[3] = 1; /* length of an Array can change. The type of objects i
 console.log(selectedProducts)
 console.log(typeof selectedProducts) // Type of an array is Object
 console.log(typeof selectedProducts.length) // Array objects have built in properties 
+
+function welcome(name, lastName) {
+    console.log('Hello ' + name + '' + lastName ); // Concatination
+} // Terminated without the semicolon
+
+console.log(welcome('Golam','Mafuz'))
+console.log(welcome('Golam')) /* As we have not initialized the lastName argument, 
+                                 we will get undefined on the console
+                              */
