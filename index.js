@@ -52,11 +52,23 @@ console.log(selectedProducts)
 console.log(typeof selectedProducts) // Type of an array is Object
 console.log(typeof selectedProducts.length) // Array objects have built in properties 
 
-function welcome(name, lastName) {
-    console.log('Hello ' + name + '' + lastName ); // Concatination
+// Task-performing Funcition
+
+function welcome(name, lastName) { 
+    console.log('Hello, ' + name + ' ' + lastName ); // Concatination
 } // Terminated without the semicolon
 
 console.log(welcome('Golam','Mafuz'))
-console.log(welcome('Golam')) /* As we have not initialized the lastName argument, 
-                                 we will get undefined on the console
+console.log(welcome('Golam')) /* As we have not initialized the lastName argument for the welcome function, 
+                                 we will see Hello, Golam undefined in the console
                               */
+// The following function, called cube, calculates and returns a value.
+
+function cube(number) {
+    return number*number*number
+} 
+
+let number = cube(2); // Initialized a variable called number by calling the cube function 
+console.log(number)
+
+console.log(cube(2))
